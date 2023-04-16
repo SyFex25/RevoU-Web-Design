@@ -1,0 +1,263 @@
+/* Mengatur tampilan umum */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Mengatur tampilan header */
+header {
+    background-color: #494c51;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav img {
+    margin-left: 10px;
+}
+
+#links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+#links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+#links a:last-child {
+    margin-right: 0;
+}
+
+#created-by {
+    font-weight: bold;
+}
+
+#About-us-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 70vh; */
+}
+
+#About-us-box-title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#About-us-box img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#About-us-box-desc {
+    max-width: 50%;
+    text-align: justify;
+}
+
+
+/* Mengatur tampilan footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    /* Mengatur tampilan umum */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    /* Mengatur tampilan header */
+    header {
+      height: auto;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav img {
+      margin: 10px auto;
+      max-height: 80px;
+    }
+  
+    #links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    #links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px 15px;
+    }
+  
+    #menu-icon {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  
+    #menu-icon div {
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+      margin: 6px 0;
+    }
+  
+    #About-us-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    #About-us-box-title {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    #About-us-box img {
+      max-width: 90%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    #About-us-box-desc {
+      max-width: 90%;
+      text-align: justify;
+      margin: 20px 0;
+    }
+  
+    /* Mengatur tampilan footer */
+    footer {
+        text-align: center;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 762px) and (orientation: landscape) {
+    /* Mengatur tampilan umum */
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    /* Mengatur tampilan header */
+    header {
+      height: auto;
+    }
+  
+    nav {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    nav img {
+        margin: 10px 0;
+    }
+  
+    #links {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  
+    #links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  
+    #menu-icon {
+      display: none;
+    }
+  
+    /* Mengatur tampilan content */
+    main {
+      padding: 40px 20px;
+    }
+  
+    #About-us-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+  
+    #About-us-box-title {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    #About-us-box img {
+      max-width: 40%;
+      height: auto;
+      margin-right: 40px;
+    }
+  
+    #About-us-box-desc {
+      max-width: 50%;
+      text-align: justify;
+      margin: 0;
+    }
+  
+    /* Mengatur tampilan footer */
+    footer {
+      text-align: center;
+      position: relative;
+      padding: 20px;
+    }
+  
+    footer p {
+      margin: 0;
+    }
+  }
+  

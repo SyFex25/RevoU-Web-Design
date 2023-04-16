@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - My School</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="float: left;">
+        <img src="pictures/logo.png" alt="Logo" width="100">
+      </div>
+      <div id="links">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About Us</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="index.html#message-us-box">Message Us</a>
+      </div>
+      <div style="clear: both;"></div>
+    </nav>
+  </header>
+
+  <div id="About-us-box">
+    <div id="About-us-box-title">
+      <h1>About Us</h1>
+    </div>
+    <img src="pictures/staff.jpg">
+    <div id="About-us-box-desc">
+      <p>Rajawali Highschool is a private school located in the heart of the city. Our school provides education from kindergarten to high school level. Our mission is to provide quality education to our students and prepare them for the challenges of the future. We have a team of highly qualified and experienced teachers who are dedicated to helping our students achieve their full potential. Our facilities include modern classrooms, science and computer labs, a library, and a playground. We also offer extracurricular activities such as sports, music, and art. If you are looking for a school that provides quality education and prepares students for the future, Rajawali Highschool is the right choice for you.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created by <span id="created-by"></span></p>
+  </footer>
+  <script>
+    const nama = sessionStorage.getItem('nama');
+    document.getElementById('created-by').innerHTML = nama;
+  </script>  
+</body>
+</html>
